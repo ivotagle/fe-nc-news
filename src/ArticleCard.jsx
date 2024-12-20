@@ -10,7 +10,7 @@ const ArticleCard = ({ article }) => {
       <img src={article.article_img_url} alt={article.title} />
       <h3>{article.title}</h3>
       <p>
-        {article.author} - {article.topic}
+        Author: {article.author} - Topic: {article.topic}
       </p>
     </section>
   );
