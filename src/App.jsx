@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./Footer";
 import Header from "./Header";
 import ArticlesList from "./ArticlesList";
+import ArticleDetail from "./ArticleDetail";
 import { Route, Routes } from "react-router-dom";
 
 // display articles from api
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ArticlesList />} />
         <Route path="/articles" element={<ArticlesList />} />
+        <Route path="/articles/:article_id" element={<ArticleDetail />} />
       </Routes>
       <Footer />
     </>
